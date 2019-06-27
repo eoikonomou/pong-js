@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Digital Dare;
+  src: url(Digital_Dare.ttf);
+}
+
+* {
+	cursor: none;
+}
+
+html, body, #root, .App {
+	height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #2a55a3;
+}
+
+.GameTitle {
+	display: none;
+}
+
+.App {
+	height: calc(100% - 60px);
+	padding: 30px 90px;
+}
+
+.BoundingBox {
+	height: 100%;
+	position: relative;
+}
+
+.Paddle {
+	width: 0.6%;
+	height: 8%;
+	background-color: #fff;
+	position: absolute;	
+	
+}
+
+.Paddle:nth-child(1) {
+	left: 0;
+	top: 246px;
+}
+
+.Paddle:nth-child(3) {
+	right: 0;
+	top: 574px;
+}
+
+.Ball {
+	width: 3vh;
+	height: 3vh;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 50px;
+	transition: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Net {
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: 0;
+	height: 100%;
+	width: 3px;
+	background-image: linear-gradient(to right, white 50%, transparent 50%), linear-gradient(to right, white 50%, transparent 50%), linear-gradient(to bottom, white 50%, transparent 50%), linear-gradient(to bottom, white 50%, transparent 50%);
+  	background-position: left top, left bottom, left top, right top;
+  	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  	background-size: 28px 3px, 28px 3px, 3px 28px, 3px 28px;
+}
+
+.Player {
+	font-family: Digital Dare;
+	color: #f5812c;
+	font-size: 30px;
+}
+
+.ScoreBoard {
+	display: flex;
+	position: absolute;
+    width: calc(100% - 180px);
+}
+
+.Score {
+	font-family: Digital Dare;
+	color: #fff;
+	font-size: 72px;
+	margin-top: -12px;
+}
+
+.Side {
+	flex: 1;
+	text-align: center;
+}

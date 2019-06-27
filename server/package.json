@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server utilizing sockets that handles paddle and ball movement of pong game",
+  "main": "src/server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eusoikonomou/pong-js.git"
+  },
+  "keywords": [
+    "socket.io",
+    "node.js",
+    "express.js"
+  ],
+  "author": "Efstathios Oikonomou <eusoikonomou@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eusoikonomou/pong-js/issues"
+  },
+  "homepage": "https://github.com/eusoikonomou/pong-js#readme"
+}
